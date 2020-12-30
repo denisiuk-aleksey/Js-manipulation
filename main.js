@@ -32,8 +32,6 @@ function findArithmeticValue(arr) {
 
 console.log(Math.ceil(Math.random() * 100));
 
-const arr2 = [];
-
 function createNewRandomArray() {
   let arr = [];
   for (i = 0; i < 10; i++) {

@@ -152,13 +152,21 @@ class ElectronicVersionOfBook extends Book {
 
 function name(n) {
   console.log(
-    this.apply(null, {length: n}).map(function(val, index) {
-      index++;
-      if (index % 3 === 0 && index % 5 === 0) {return "FizzBuzz";}
-      if (index % 3 === 0){return "Fizz";}
-      if (index % 5 === 0){return "Buzz";}
-      return index;
-    }).join('\n')
+    this.apply(null, { length: n })
+      .map(function (val, index) {
+        index++;
+        if (index % 3 === 0 && index % 5 === 0) {
+          return "FizzBuzz";
+        }
+        if (index % 3 === 0) {
+          return "Fizz";
+        }
+        if (index % 5 === 0) {
+          return "Buzz";
+        }
+        return index;
+      })
+      .join("\n")
   );
 
   /*this.apply(null, {length: n}).map(function(val, index) {
